@@ -1,42 +1,33 @@
 <!DOCTYPE html>
-<html lang="en-us" ng-app="angularApp">
+<html lang="en-us" ng-app="weatherApp">
     <head>
+		<title>Weather</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- load angular via CDN -->
-		<script src="https://code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
-		<script src="https://code.angularjs.org/1.3.0-rc.1/angular-messages.min.js"></script>
-		<script src="https://code.angularjs.org/1.3.0-rc.1/angular-route.min.js"></script>
-        <script src="app.js"></script>
+		<script src="https://code.angularjs.org/1.3.0-rc.2/angular.min.js"></script>
+		<script src="https://code.angularjs.org/1.3.0-rc.2/angular-resource.min.js"></script>
+		<script src="https://code.angularjs.org/1.3.0-rc.2/angular-route.min.js"></script>
+		<script src="app.js"></script>
+		<script src="routes.js"></script>
+		<script src="services.js"></script>
+		<script src="controllers.js"></script>
+		<script src="directives.js"></script>
     </head>
     <body>
-
-        <header>
-			<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="/">AngularJS</a>
+<header>
+	
+        <nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="/">Weather</a>
+					</div>
 				</div>
-
-				<ul class="nav navbar-nav navbar">
-					<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-					<li><a href="#/second"><i class="fa fa-home"></i> Second</a></li>
-				</ul>
-			</div>
-			</nav>
-		</header>
-		<div class="container">
-				<h1>Title</h1>
-		</div>
-		
-        <div class="container">
-			<div class="row">
-				<div class="col-md-12">
-						<div ng-view></div>
-				</div>
-			</div>
-		</div>
-
-    </body>
+				</nav>
+</header>
+	<div class="container">
+			<div ng-view></div>
+	</div>
+</body>
 </html>
