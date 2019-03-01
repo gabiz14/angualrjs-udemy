@@ -16,18 +16,19 @@
 		<script src="directives.js"></script>
     </head>
     <body>
-<header>
-	
-        <nav class="navbar navbar-default">
-				<div class="container">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="/">Weather</a>
-					</div>
+
+		<header></header>
+		<div class="container">
+				<h1>Title</h1>
+		</div>
+		
+        <div class="container">
+			<div class="row">
+				<div class="col-md-12">
+						<div ng-view></div>
 				</div>
-				</nav>
-</header>
-	<div class="container">
-			<div ng-view></div>
-	</div>
-</body>
+			</div>
+		</div>
+
+    </body>
 </html>
